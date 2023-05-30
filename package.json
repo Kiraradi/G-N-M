@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
     "lint": "eslint . --fix",
     "test": "jest --testPathPattern=./src/",
     "coverage": "jest --coverage",
@@ -43,6 +44,7 @@
     "mini-css-extract-plugin": "^2.6.1",
     "netlify-plugin-cache": "^1.0.3",
     "prettier": "2.7.1",
+    "puppeteer": "^20.4.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.11.1",
